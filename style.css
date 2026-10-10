@@ -59,7 +59,7 @@ p{
    color: var(--text-dim);
 }
 
-.site-nav, .hero, .about, .education, .stats, .projects,
+.site-nav, .hero, .about, .education, .stats, .case-study, .projects,
 .stack, .contact, .site-footer{
    max-width: 900px;
    margin: 0 auto;
@@ -276,6 +276,106 @@ h1{
 .about-text{
    max-width: 65ch;
    color: var(--text);
+}
+
+.case-study-tagline{
+   color: var(--accent);
+   font-size: 18px;
+   margin-top: -6px;
+   margin-bottom: 36px;
+}
+
+.case-study-role{
+   border: 1px solid var(--border);
+   background-color: var(--panel);
+   border-radius: 8px;
+   padding: 20px 24px;
+   margin-bottom: 36px;
+}
+
+.case-study-block{
+   margin-bottom: 36px;
+}
+
+.case-study-heading{
+   font-size: 13px;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: var(--accent);
+   margin: 0 0 12px;
+}
+
+.case-study-text{
+   max-width: 65ch;
+   color: var(--text);
+   margin: 0;
+}
+
+.case-study-list{
+   max-width: 65ch;
+   color: var(--text-dim);
+   padding-left: 20px;
+   margin: 0;
+}
+
+.case-study-list li{
+   margin-bottom: 6px;
+}
+
+.feature-grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 16px;
+}
+
+.feature-card{
+   border: 1px solid var(--border);
+   background-color: var(--panel);
+   border-radius: 8px;
+   padding: 18px 20px;
+}
+
+.feature-title{
+   margin: 0 0 8px;
+   font-size: 15px;
+   color: var(--text);
+}
+
+.feature-desc{
+   margin: 0;
+   font-size: 13px;
+   color: var(--text-dim);
+}
+
+.gallery{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 18px;
+}
+
+.gallery-item{
+   margin: 0;
+}
+
+.gallery-item img{
+   display: block;
+   width: 100%;
+   height: auto;
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.gallery-item a:hover img{
+   border-color: var(--accent);
+   transform: translateY(-3px);
+}
+
+.gallery-item figcaption{
+   margin-top: 8px;
+   font-size: 13px;
+   color: var(--text-dim);
 }
 
 .education-list{

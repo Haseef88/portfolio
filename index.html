@@ -85,7 +85,7 @@
             }
             el.innerHTML = html + '<span class="typing-cursor">|</span>';
             if (i < full.length){
-               setTimeout(tick, 85);
+               setTimeout(tick, 110);
             } else {
                setTimeout(function(){
                   el.innerHTML = html;
@@ -174,41 +174,136 @@
   </section>
 
   <!-- ================================================================
-       PROJECTS
+       FEATURED WORK — STYLECUE CASE STUDY
+       ================================================================ -->
+  <section class="case-study" id="work">
+    <header class="section-head">
+      <p class="section-kicker">Featured work</p>
+      <h2 class="section-title">StyleCue</h2>
+    </header>
+    <p class="case-study-tagline">
+      AI-powered in-store style matching, built for a real retail inventory.
+    </p>
+
+    <div class="case-study-role">
+      <h3 class="case-study-heading">My Role</h3>
+      <p class="case-study-text">
+        Backend development &amp; integration — built the backend and
+        database, then worked with my team to connect it to the frontend
+        as lead developer.
+      </p>
+    </div>
+
+    <div class="case-study-block">
+      <h3 class="case-study-heading">01 — The Problem</h3>
+      <ul class="case-study-list">
+        <li>Shoppers are often unsure what to buy or how to match items</li>
+        <li>No stylist is available on the retail floor to help</li>
+        <li>Staff have no way to see customer interest until someone asks</li>
+      </ul>
+    </div>
+
+    <div class="case-study-block">
+      <h3 class="case-study-heading">02 — The Idea</h3>
+      <p class="case-study-text">
+        An in-store kiosk that gives instant, personalized styling —
+        connected to each store's own real, live inventory, with no
+        account or login needed.
+      </p>
+    </div>
+
+    <div class="case-study-block">
+      <h3 class="case-study-heading">03 — The Product</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4 class="feature-title">AI Stylist Quiz</h4>
+          <p class="feature-desc">A guided flow — gender, category, occasion, skin tone, body type, measurements — ending in personalized outfit picks.</p>
+        </div>
+        <div class="feature-card">
+          <h4 class="feature-title">Browse &amp; Shop</h4>
+          <p class="feature-desc">A self-directed path through the store's live catalog, for anyone who'd rather browse than take the quiz.</p>
+        </div>
+        <div class="feature-card">
+          <h4 class="feature-title">Live Inventory Matching</h4>
+          <p class="feature-desc">Recommendations pulled only from a store's real, current stock — out-of-stock items never show up.</p>
+        </div>
+        <div class="feature-card">
+          <h4 class="feature-title">Staff Notifications</h4>
+          <p class="feature-desc">A live dashboard alerts staff the moment a customer confirms their picks, so items are ready for the fitting room.</p>
+        </div>
+        <div class="feature-card">
+          <h4 class="feature-title">Privacy by Design</h4>
+          <p class="feature-desc">Fully anonymous sessions — no accounts, no login, and all data is cleared the moment a visit ends.</p>
+        </div>
+        <div class="feature-card">
+          <h4 class="feature-title">Multi-Tenant Architecture</h4>
+          <p class="feature-desc">Each store's inventory, orders, and staff logins stay fully isolated from every other store.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-study-block">
+      <h3 class="case-study-heading">04 — The Product in Action</h3>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <a href="images/stylecue-01-landing.webp" target="_blank" rel="noopener"><img src="images/stylecue-01-landing.webp" alt="StyleCue landing screen with AI Stylist and Browse &amp; Shop options" loading="lazy"></a>
+          <figcaption>Landing — choose the AI Stylist or browse the catalog</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <a href="images/stylecue-02-occasion.webp" target="_blank" rel="noopener"><img src="images/stylecue-02-occasion.webp" alt="AI Stylist occasion step: casual, work, wedding or party" loading="lazy"></a>
+          <figcaption>Stylist quiz — pick the occasion</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <a href="images/stylecue-03-colour-matching.webp" target="_blank" rel="noopener"><img src="images/stylecue-03-colour-matching.webp" alt="Colour matching step with a skin tone slider and suggested colours" loading="lazy"></a>
+          <figcaption>Colour matching — palettes suggested from skin tone</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <a href="images/stylecue-04-find-your-fit.webp" target="_blank" rel="noopener"><img src="images/stylecue-04-find-your-fit.webp" alt="Find Your Fit step with height, waist and size inputs" loading="lazy"></a>
+          <figcaption>Find Your Fit — measurements or a general size</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <a href="images/stylecue-05-ai-match.webp" target="_blank" rel="noopener"><img src="images/stylecue-05-ai-match.webp" alt="AI match results showing a grey hooded sweatshirt and other tops" loading="lazy"></a>
+          <figcaption>AI match — outfit picks from live stock</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <a href="images/stylecue-06-order-confirmed.webp" target="_blank" rel="noopener"><img src="images/stylecue-06-order-confirmed.webp" alt="Order confirmation screen showing staff have been notified" loading="lazy"></a>
+          <figcaption>Confirmation — staff are notified instantly</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <a href="images/stylecue-07-browse-categories.webp" target="_blank" rel="noopener"><img src="images/stylecue-07-browse-categories.webp" alt="Browse and Shop category grid with photos for top, bottom, shoes, dress, outerwear and accessories" loading="lazy"></a>
+          <figcaption>Browse &amp; Shop — explore the catalog by category</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <a href="images/stylecue-08-staff-dashboard.webp" target="_blank" rel="noopener"><img src="images/stylecue-08-staff-dashboard.webp" alt="Staff dashboard listing customer orders with pending and fulfilled status" loading="lazy"></a>
+          <figcaption>Staff dashboard — live orders to fulfil</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="case-study-block">
+      <h3 class="case-study-heading">Explore it</h3>
+      <div class="project-links">
+        <a class="project-link" href="https://stylecue-frontend.vercel.app/" target="_blank" rel="noopener">Live demo app</a>
+        <a class="project-link" href="https://stylecue-frontend.vercel.app/staff" target="_blank" rel="noopener">Staff view</a>
+        <a class="project-link" href="https://github.com/minhajmilfer/Stylecue-Frontend" target="_blank" rel="noopener">Frontend repo</a>
+        <a class="project-link" href="https://github.com/Haseef88/stylecue-be" target="_blank" rel="noopener">Backend repo</a>
+        <a class="project-link" href="https://www.figma.com/proto/LhfPdIABsFJ7FYexM8gYim?node-id=0-1&t=4NrNVKZE6Qp40srX-6" target="_blank" rel="noopener">Figma</a>
+        <a class="project-link" href="https://canva.link/eskaawt7c5tft4c" target="_blank" rel="noopener">Pitch deck</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       OTHER PROJECTS
        Concepts: borders, border-radius, padding, margin, :hover, ::before
        ================================================================ -->
-  <section class="projects" id="work">
+  <section class="projects">
     <header class="section-head">
-      <p class="section-kicker">Selected work</p>
-      <h2 class="section-title">Things I've built</h2>
+      <p class="section-kicker">More work</p>
+      <h2 class="section-title">Other things I've built</h2>
     </header>
 
     <div class="project-grid">
-
-      <article class="project-card project-card--featured">
-        <h3 class="project-title">StyleCue</h3>
-        <p class="project-desc">
-          An AI-powered in-store style-matching kiosk software for fashion retail - customers
-          get personalized outfit picks from a store's live inventory, and staff get
-          notified in real time to bring the items out.
-        </p>
-        <ul class="tag-list">
-          <li class="tag"><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener">FastAPI</a></li>
-          <li class="tag"><a href="https://www.postgresql.org/" target="_blank" rel="noopener">PostgreSQL</a></li>
-          <li class="tag"><a href="https://nextjs.org/" target="_blank" rel="noopener">Next.js</a></li>
-        </ul>
-        <details class="project-links-toggle">
-          <summary class="project-link">View project</summary>
-          <div class="project-links">
-            <a class="project-link" href="https://stylecue-frontend.vercel.app/" target="_blank" rel="noopener">Live demo app</a>
-            <a class="project-link" href="https://stylecue-frontend.vercel.app/staff" target="_blank" rel="noopener">Staff view</a>
-            <a class="project-link" href="https://github.com/minhajmilfer/Stylecue-Frontend" target="_blank" rel="noopener">Frontend repo</a>
-            <a class="project-link" href="https://github.com/Haseef88/stylecue-be" target="_blank" rel="noopener">Backend repo</a>
-            <a class="project-link" href="https://www.figma.com/proto/LhfPdIABsFJ7FYexM8gYim?node-id=0-1&t=4NrNVKZE6Qp40srX-6" target="_blank" rel="noopener">Figma</a>
-            <a class="project-link" href="https://canva.link/eskaawt7c5tft4c" target="_blank" rel="noopener">Pitch deck</a>
-          </div>
-        </details>
-      </article>
 
       <article class="project-card">
         <h3 class="project-title">StyleCue - Marketing Site</h3>
@@ -228,6 +323,22 @@
             <a class="project-link" href="https://github.com/Haseef88/Stylecue-mw" target="_blank" rel="noopener">Repository</a>
           </div>
         </details>
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-title">Todo App (Android)</h3>
+        <p class="project-desc">
+          An Android to-do app with deadlines, alarm reminders, search and
+          photos on tasks, saved through a Node.js API to an H2 database.
+          A university course exercise, built with AI assistance.
+        </p>
+        <ul class="tag-list">
+          <li class="tag"><a href="https://kotlinlang.org/" target="_blank" rel="noopener">Kotlin</a></li>
+          <li class="tag"><a href="https://developer.android.com/compose" target="_blank" rel="noopener">Jetpack Compose</a></li>
+          <li class="tag"><a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a></li>
+          <li class="tag"><a href="https://h2database.com/" target="_blank" rel="noopener">H2</a></li>
+        </ul>
+        <a class="project-link" href="https://github.com/Haseef88/Todo-App" target="_blank" rel="noopener">View project</a>
       </article>
 
       <article class="project-card">
